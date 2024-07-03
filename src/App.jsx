@@ -59,7 +59,7 @@ function App() {
                 <div className="cards">
                     {products.map((product) => (
                         <div key={product.id} className="card">
-                            <img width={200} src={product.images[0]} alt="" />
+                            <img width={200} src={product.thumbnail} alt="" />
                             <h2>${product.price}</h2>
                             <h2>{product.title}</h2>
                             <div className="like">
@@ -84,7 +84,7 @@ function App() {
                     <h2>Liked {state.length}</h2>
                     {state.map((product) => (
                         <div key={product.id} className="card">
-                            <img width={200} src={product.images[0]} alt="" />
+                            <img width={200} src={product.thumbnail} alt="" />
                             <h2>${product.price}</h2>
                             <h2>{product.title}</h2>
                             <div className="like">
