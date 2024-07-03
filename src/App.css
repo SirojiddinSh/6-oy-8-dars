@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: rgb(58, 142, 180);
+    background: linear-gradient(
+        90deg,
+        rgba(58, 142, 180, 1) 0%,
+        rgba(84, 184, 254, 1) 50%,
+        rgba(69, 232, 252, 1) 100%
+    );
+}
+
+.body2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 50px;
+}
+
+.liked {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(118, 156, 199);
+}
+
+.like-button {
+    position: absolute;
+    cursor: pointer;
+    font-size: 25px;
+    margin-left: 260px;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    text-align: center;
+}
+
+.like {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+}
